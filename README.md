@@ -3,6 +3,7 @@
 Fork of https://github.com/sannajammeh/react-native-carousel-loop wiht few pull merges from
 original implementation of https://github.com/phil-r/react-native-looped-carousel.
 
+NOTE source map files not re-generated, are the same as in the forked repo
 ## Example usage
 
 ```tsx
