@@ -320,9 +320,8 @@ class Carousel extends Component<CarouselProps, StateProps> {
           style={[styles.pageInfoPill, { backgroundColor: this.props.pageInfoBackgroundColor }]}
         >
           <Text style={[styles.pageInfoText, this.props.pageInfoTextStyle]}>
-            {`${(this.state.currentPage as number) + 1}${
-              this.props.pageInfoTextSeparator
-            }${pageLength}`}
+            {`${(this.state.currentPage as number) + 1}${this.props.pageInfoTextSeparator
+              }${pageLength}`}
           </Text>
         </View>
       </View>
@@ -401,6 +400,7 @@ class Carousel extends Component<CarouselProps, StateProps> {
           pagingEnabled
           bounces={false}
           scrollEnabled={this.props.swipe}
+          scrollEventThrottle={0}
           contentContainerStyle={[
             styles.horizontalScroll,
             this.props.contentContainerStyle,
