@@ -1,6 +1,7 @@
 ## react-native-carousel-loop
 
-Typescript implementation of https://github.com/phil-r/react-native-looped-carousel with small fixes.
+Fork of https://github.com/sannajammeh/react-native-carousel-loop wiht few pull merges from
+original implementation of https://github.com/phil-r/react-native-looped-carousel.
 
 ## Example usage
 
@@ -63,5 +64,6 @@ interface CarouselProps {
   onPageBeingChanged?: (index: number) => void; // undefined
   swipe?: boolean; // true
   isLooped?: boolean; // true
+  keyboardShouldPersistTaps?: string; // never
 }
 ```
