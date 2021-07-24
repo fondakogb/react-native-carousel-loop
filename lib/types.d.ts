@@ -28,6 +28,7 @@ export interface CarouselProps {
     onPageBeingChanged?: (index: number) => void;
     swipe?: boolean;
     isLooped?: boolean;
+    keyboardShouldPersistTaps?: string;
 }
 export interface StateProps {
     currentPage?: number;

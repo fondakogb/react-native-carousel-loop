@@ -53,6 +53,7 @@ class Carousel extends Component<CarouselProps, StateProps> {
     onPageBeingChanged: undefined,
     swipe: true,
     isLooped: true,
+    keyboardShouldPersistTaps: 'never',
   };
 
   constructor(props: CarouselProps) {
@@ -410,6 +411,7 @@ class Carousel extends Component<CarouselProps, StateProps> {
               height: size.height,
             },
           ]}
+          keyboardShouldPersistTaps={this.props.keyboardShouldPersistTaps}
         >
           {contents}
         </ScrollView>

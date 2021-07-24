@@ -37,6 +37,7 @@ declare class Carousel extends Component<CarouselProps, StateProps> {
         onPageBeingChanged: undefined;
         swipe: boolean;
         isLooped: boolean;
+        keyboardShouldPersistTaps: string;
     };
     constructor(props: CarouselProps);
     componentDidMount(): void;
