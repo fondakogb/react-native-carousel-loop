@@ -1,9 +1,9 @@
 ## react-native-carousel-loop
 
-Fork of https://github.com/sannajammeh/react-native-carousel-loop wiht few pull merges from
-original implementation of https://github.com/phil-r/react-native-looped-carousel.
+Fork of https://github.com/sannajammeh/react-native-carousel-loop
+wiht few pull merges from original implementation of https://github.com/phil-r/react-native-looped-carousel.
 
-NOTE source map files not re-generated, are the same as in the forked repo
+NOTE source map files are not re-generated (I left the same as in the forked repo)
 ## Example usage
 
 ```tsx
@@ -46,7 +46,7 @@ interface CarouselProps {
   pageStyle?: ViewProps['style']; // undefined
   contentContainerStyle?: ViewProps['style']; // undefined
   pageInfo?: boolean; // false
-  pageInfoBackgroundColor?: string; // rgba(0, 0, 0, 0.25)
+  pageInfoBackgroundColor?: string; // 'rgba(0, 0, 0, 0.25)'
   pageInfoTextStyle?: TextProps['style']; // undefined
   pageInfoBottomContainerStyle?: ViewProps['style']; // undefined
   pageInfoTextSeparator?: string; // ' / '
@@ -65,6 +65,6 @@ interface CarouselProps {
   onPageBeingChanged?: (index: number) => void; // undefined
   swipe?: boolean; // true
   isLooped?: boolean; // true
-  keyboardShouldPersistTaps?: string; // never
+  keyboardShouldPersistTaps?: string; // 'never'
 }
 ```
